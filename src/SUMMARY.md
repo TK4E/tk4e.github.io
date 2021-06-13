@@ -1,5 +1,7 @@
 - [SUMMARY.md](SUMMARY.md)
     - [#-Linux.md](Linux/#-Linux.md)
+        - [#-Arch.md](Linux/Arch/#-Arch.md)
+            - [pacman.md](Linux/Arch/01-Arch/pacman.md)
         - [#-Multimedia.md](Linux/Multimedia/#-Multimedia.md)
             - [#-FFmpeg.md](Linux/Multimedia/FFmpeg/#-FFmpeg.md)
     - [#-PL.md](PL/#-PL.md)

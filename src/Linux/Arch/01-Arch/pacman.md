@@ -1,0 +1,8 @@
+# pacman
+
+
+```sh
+pacman -Syu
+
+
+```
