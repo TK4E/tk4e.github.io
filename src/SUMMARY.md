@@ -1,5 +1,6 @@
 - [SUMMARY.md](SUMMARY.md)
     - [00-Lua.md](Lua/00-Lua.md)
+        - [01-a.md](Lua/01/01-a.md)
     - [00-Rust.md](Rust/00-Rust.md)
         - [01-a.md](Rust/01/01-a.md)
         - [01-b.md](Rust/01/01-b.md)
