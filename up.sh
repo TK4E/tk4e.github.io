@@ -2,7 +2,7 @@
 
 #echo "# md" >> README.md
 #git init
-cd src && fd --type f . | ../summary > ../SUMMARY.md && mv ../SUMMARY.md . && cd ..
+cd src && fd --type f md . | ../summary > ../SUMMARY.md && mv ../SUMMARY.md . && cd ..
 git add .
 git commit -m "up"
 git branch -M main

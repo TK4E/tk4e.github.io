@@ -1,5 +1,4 @@
 - [SUMMARY.md](SUMMARY.md)
-            - [TK4E.svg](Life/Image/svg/TK4E.svg)
     - [#-Linux.md](Linux/#-Linux.md)
         - [#-Arch.md](Linux/Arch/#-Arch.md)
             - [pacman-01.md](Linux/Arch/01-pacamn/pacman-01.md)
