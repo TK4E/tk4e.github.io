@@ -1,0 +1,225 @@
+<!DOCTYPE HTML>
+<html lang="en" class="sidebar-visible no-js ayu">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>unrar-01.md</title>
+                
+
+        <!-- Custom HTML head -->
+        
+
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+                <link rel="icon" href="../../../favicon.svg">
+                        <link rel="shortcut icon" href="../../../favicon.png">
+                <link rel="stylesheet" href="../../../css/variables.css">
+        <link rel="stylesheet" href="../../../css/general.css">
+        <link rel="stylesheet" href="../../../css/chrome.css">
+                <link rel="stylesheet" href="../../../css/print.css" media="print">
+        
+        <!-- Fonts -->
+        <link rel="stylesheet" href="../../../FontAwesome/css/font-awesome.css">
+                <link rel="stylesheet" href="../../../fonts/fonts.css">
+        
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="../../../highlight.css">
+        <link rel="stylesheet" href="../../../tomorrow-night.css">
+        <link rel="stylesheet" href="../../../ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+        
+            </head>
+    <body>
+        <!-- Provide site root to javascript -->
+        <script type="text/javascript">
+            var path_to_root = "../../../";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "ayu" : "ayu";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script type="text/javascript">
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script type="text/javascript">
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            var html = document.querySelector('html');
+            html.classList.remove('no-js')
+            html.classList.remove('ayu')
+            html.classList.add(theme);
+            html.classList.add('js');
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script type="text/javascript">
+            var html = document.querySelector('html');
+            var sidebar = 'hidden';
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div class="sidebar-scrollbox">
+                <ol class="chapter"><li class="chapter-item affix "><a href="../../../SUMMARY.html">SUMMARY.md</a></li><li class="chapter-item "><a href="../../../Life/#-Life.html"><strong aria-hidden="true">1.</strong> #-Life.md</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../../Life/Post/#-Post.html"><strong aria-hidden="true">1.1.</strong> #-Post.md</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../../Life/Post/2021/#-2021.html"><strong aria-hidden="true">1.1.1.</strong> #-2021.md</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../../Life/Post/2021/06/#-06.html"><strong aria-hidden="true">1.1.1.1.</strong> #-06.md</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../../Life/Post/2021/06/mermaid/mermaid-01.html"><strong aria-hidden="true">1.1.1.1.1.</strong> mermaid-01.md</a></li><li class="chapter-item "><a href="../../../Life/Post/2021/06/svgbob/svgbob-01.html"><strong aria-hidden="true">1.1.1.1.2.</strong> svgbob-01.md</a></li></ol></li></ol></li></ol></li></ol></li><li class="chapter-item expanded "><a href="../../../Linux/#-Linux.html"><strong aria-hidden="true">2.</strong> #-Linux.md</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../../../Linux/Arch/#-Arch.html"><strong aria-hidden="true">2.1.</strong> #-Arch.md</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../../Linux/Arch/01-pacamn/pacman-01.html"><strong aria-hidden="true">2.1.1.</strong> pacman-01.md</a></li><li class="chapter-item "><a href="../../../Linux/Arch/02-zsh/zsh-01.html"><strong aria-hidden="true">2.1.2.</strong> zsh-01.md</a></li><li class="chapter-item "><a href="../../../Linux/Arch/03-nvim/nvim-01.html"><strong aria-hidden="true">2.1.3.</strong> nvim-01.md</a></li><li class="chapter-item "><a href="../../../Linux/Arch/03-nvim/nvim-09.html"><strong aria-hidden="true">2.1.4.</strong> nvim-09.md</a></li><li class="chapter-item "><a href="../../../Linux/Arch/04-SQLite3/sqlite3_example-00.html"><strong aria-hidden="true">2.1.5.</strong> sqlite3_example-00.md</a></li><li class="chapter-item "><a href="../../../Linux/Arch/04-SQLite3/sqlite3_run_sql-01.html"><strong aria-hidden="true">2.1.6.</strong> sqlite3_run_sql-01.md</a></li><li class="chapter-item "><a href="../../../Linux/Arch/05-base/Linux-01.html"><strong aria-hidden="true">2.1.7.</strong> Linux-01.md</a></li><li class="chapter-item "><a href="../../../Linux/Arch/05-base/cut-01.html"><strong aria-hidden="true">2.1.8.</strong> cut-01.md</a></li><li class="chapter-item "><a href="../../../Linux/Arch/05-base/find-01.html"><strong aria-hidden="true">2.1.9.</strong> find-01.md</a></li><li class="chapter-item "><a href="../../../Linux/Arch/05-base/ls-01.html"><strong aria-hidden="true">2.1.10.</strong> ls-01.md</a></li><li class="chapter-item "><a href="../../../Linux/Arch/05-base/read-01.html"><strong aria-hidden="true">2.1.11.</strong> read-01.md</a></li><li class="chapter-item "><a href="../../../Linux/Arch/05-base/rm-01.html"><strong aria-hidden="true">2.1.12.</strong> rm-01.md</a></li><li class="chapter-item "><a href="../../../Linux/Arch/05-base/tail-01.html"><strong aria-hidden="true">2.1.13.</strong> tail-01.md</a></li><li class="chapter-item "><a href="../../../Linux/Arch/05-base/uniq-01.html"><strong aria-hidden="true">2.1.14.</strong> uniq-01.md</a></li><li class="chapter-item "><a href="../../../Linux/Arch/06-tar/tar-01.html"><strong aria-hidden="true">2.1.15.</strong> tar-01.md</a></li><li class="chapter-item "><a href="../../../Linux/Arch/08-Wine/wine-01.html"><strong aria-hidden="true">2.1.16.</strong> wine-01.md</a></li><li class="chapter-item "><a href="../../../Linux/Arch/09-git/git-01.html"><strong aria-hidden="true">2.1.17.</strong> git-01.md</a></li><li class="chapter-item "><a href="../../../Linux/Arch/21-XFS/xfs-01.html"><strong aria-hidden="true">2.1.18.</strong> xfs-01.md</a></li><li class="chapter-item expanded "><a href="../../../Linux/Arch/98-unrar/unrar-01.html" class="active"><strong aria-hidden="true">2.1.19.</strong> unrar-01.md</a></li></ol></li><li class="chapter-item "><a href="../../../Linux/Multimedia/#-Multimedia.html"><strong aria-hidden="true">2.2.</strong> #-Multimedia.md</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../../Linux/Multimedia/01-FFmpeg/#-FFmpeg.html"><strong aria-hidden="true">2.2.1.</strong> #-FFmpeg.md</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../../Linux/Multimedia/01-FFmpeg/Audio/audio-01.html"><strong aria-hidden="true">2.2.1.1.</strong> audio-01.md</a></li><li class="chapter-item "><a href="../../../Linux/Multimedia/01-FFmpeg/Image/image-01.html"><strong aria-hidden="true">2.2.1.2.</strong> image-01.md</a></li><li class="chapter-item "><a href="../../../Linux/Multimedia/01-FFmpeg/Video/video-01.html"><strong aria-hidden="true">2.2.1.3.</strong> video-01.md</a></li><li class="chapter-item "><a href="../../../Linux/Multimedia/01-FFmpeg/x265/x265-01.html"><strong aria-hidden="true">2.2.1.4.</strong> x265-01.md</a></li></ol></li><li class="chapter-item "><a href="../../../Linux/Multimedia/03-Gstreamer/gstreamer-01.html"><strong aria-hidden="true">2.2.2.</strong> gstreamer-01.md</a></li><li class="chapter-item "><a href="../../../Linux/Multimedia/05-MPV/mpv-01.html"><strong aria-hidden="true">2.2.3.</strong> mpv-01.md</a></li><li class="chapter-item "><a href="../../../Linux/Multimedia/07-Krita/krita-01.html"><strong aria-hidden="true">2.2.4.</strong> krita-01.md</a></li></ol></li></ol></li><li class="chapter-item "><a href="../../../PL/#-PL.html"><strong aria-hidden="true">3.</strong> #-PL.md</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../../PL/Lua/#-Lua.html"><strong aria-hidden="true">3.1.</strong> #-Lua.md</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../../PL/Lua/01-local/local-01.html"><strong aria-hidden="true">3.1.1.</strong> local-01.md</a></li></ol></li><li class="chapter-item "><a href="../../../PL/Rust/#-Rust.html"><strong aria-hidden="true">3.2.</strong> #-Rust.md</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../../PL/Rust/00-examples/editor-01.html"><strong aria-hidden="true">3.2.1.</strong> editor-01.md</a></li><li class="chapter-item "><a href="../../../PL/Rust/01-let/let-01.html"><strong aria-hidden="true">3.2.2.</strong> let-01.md</a></li><li class="chapter-item "><a href="../../../PL/Rust/02-macro/macro-01.html"><strong aria-hidden="true">3.2.3.</strong> macro-01.md</a></li><li class="chapter-item "><a href="../../../PL/Rust/02-macro/macro-02.html"><strong aria-hidden="true">3.2.4.</strong> macro-02.md</a></li><li class="chapter-item "><a href="../../../PL/Rust/03-enum/enum-011.html"><strong aria-hidden="true">3.2.5.</strong> enum-011.md</a></li></ol></li></ol></li><li class="chapter-item "><a href="../../../Project/#-Project.html"><strong aria-hidden="true">4.</strong> #-Project.md</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../../Project/Linguistics/#-Linguistics.html"><strong aria-hidden="true">4.1.</strong> #-Linguistics.md</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../../Project/Linguistics/en_US/#-en_US.html"><strong aria-hidden="true">4.1.1.</strong> #-en_US.md</a></li><li class="chapter-item "><a href="../../../Project/Linguistics/ja_JP/#-ja_JP.html"><strong aria-hidden="true">4.1.2.</strong> #-ja_JP.md</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../../Project/Linguistics/ja_JP/Learn/五十音-01.html"><strong aria-hidden="true">4.1.2.1.</strong> 五十音-01.md</a></li><li class="chapter-item "><a href="../../../Project/Linguistics/ja_JP/Learn/句-01.html"><strong aria-hidden="true">4.1.2.2.</strong> 句-01.md</a></li><li class="chapter-item "><a href="../../../Project/Linguistics/ja_JP/Learn/读音-02.html"><strong aria-hidden="true">4.1.2.3.</strong> 读音-02.md</a></li></ol></li><li class="chapter-item "><a href="../../../Project/Linguistics/zh_CN/#-zh_CN.html"><strong aria-hidden="true">4.1.3.</strong> #-zh_CN.md</a></li></ol></li></ol></li></ol>            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                
+                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky bordered">
+                    <div class="left-buttons">
+                        <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </button>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu (default)</button></li>
+                        </ul>
+                                                <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                                            </div>
+
+                    <h1 class="menu-title"></h1>
+
+                    <div class="right-buttons">
+                                                <a href="../../../print.html" title="Print this book" aria-label="Print this book">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+                                                                        <a href="https://github.com/TK4E/tk4e.github.io" title="Git repository" aria-label="Git repository">
+                            <i id="git-repository-button" class="fa fa-github"></i>
+                        </a>
+                                                
+                    </div>
+                </div>
+
+                                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+                
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script type="text/javascript">
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <p>unrar -ppasswd x *.rar
+# -p 和你的密码是连起来写的</p>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                                                    <a rel="prev" href="../../../Linux/Arch/21-XFS/xfs-01.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+                        
+                                                    <a rel="next" href="../../../Linux/Multimedia/#-Multimedia.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+                        
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                                    <a rel="prev" href="../../../Linux/Arch/21-XFS/xfs-01.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+                
+                                    <a rel="next" href="../../../Linux/Multimedia/#-Multimedia.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+                            </nav>
+
+        </div>
+
+                <!-- Livereload script (if served using the cli tool) -->
+        <script type="text/javascript">
+            var socket = new WebSocket("ws://localhost:3000/__livereload");
+            socket.onmessage = function (event) {
+                if (event.data === "reload") {
+                    socket.close();
+                    location.reload();
+                }
+            };
+
+            window.onbeforeunload = function() {
+                socket.close();
+            }
+        </script>
+        
+        
+                <script type="text/javascript">
+            window.playground_line_numbers = true;
+        </script>
+        
+                <script type="text/javascript">
+            window.playground_copyable = true;
+        </script>
+        
+                <script src="../../../ace.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../../../editor.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../../../mode-rust.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../../../theme-dawn.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../../../theme-tomorrow_night.js" type="text/javascript" charset="utf-8"></script>
+        
+                <script src="../../../elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../../../mark.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../../../searcher.js" type="text/javascript" charset="utf-8"></script>
+        
+        <script src="../../../clipboard.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../../../highlight.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../../../book.js" type="text/javascript" charset="utf-8"></script>
+
+        <!-- Custom JS scripts -->
+                <script type="text/javascript" src="../../../script/js/mermaid.min.js"></script>
+                <script type="text/javascript" src="../../../script/js/mermaid-init.js"></script>
+        
+        
+    </body>
+</html>

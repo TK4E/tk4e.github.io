@@ -38,8 +38,8 @@ heading-split-level = 3
 copy-js = true
 
 
-[preprocessor.mermaid]
-command = "mdbook-mermaid"
+#[preprocessor.mermaid]
+#command = "mdbook-mermaid"
 
 
 [preprocessor.svgbob]
