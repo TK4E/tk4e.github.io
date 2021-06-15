@@ -6,7 +6,7 @@ git-repository-icon = "fa-github"
 input-404 = "SUMMARY.md"
 
 
-additional-js = ["js/mermaid.min.js", "js/mermaid-init.js"]
+additional-js = ["script/js/mermaid.min.js", "script/js/mermaid-init.js"]
 
 
 [output.html.fold]
@@ -41,3 +41,15 @@ copy-js = true
 [preprocessor.mermaid]
 command = "mdbook-mermaid"
 
+
+[preprocessor.svgbob]
+text_width = 8.0
+text_height = 16.0
+class = "bob"
+font_family = "arial"
+font_size = 14.0
+stroke_width = 2.0
+# there's using css-variables from theme:
+stroke_color = "var(--fg)" # see default theme / variables.css
+background_color = "transparent" # also useful `var(--bg)`
+# all properties are optional.
