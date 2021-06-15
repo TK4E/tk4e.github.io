@@ -1,4 +1,5 @@
 - [SUMMARY.md](SUMMARY.md)
+                - [mermaid.md](Life/Post/2021/06/mermaid.md)
     - [#-Linux.md](Linux/#-Linux.md)
         - [#-Arch.md](Linux/Arch/#-Arch.md)
             - [pacman-01.md](Linux/Arch/01-pacamn/pacman-01.md)

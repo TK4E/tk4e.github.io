@@ -1,8 +1,9 @@
+```sh
 -b:a <>
     # 静态/动态比特率 (具体情况取决于所用音频编码器的设置)
 -c:a libopus
     # 使用 libopus 编码器  ( libopus 默认使用动态比特率)
--af "channelmap=channel_layout=5.1" -mapping_family 1      
+-af "channelmap=channel_layout=5.1" -mapping_family 1
     # 处理 5.1杜比 的音频(针对 libopus   一次只能处理一条音轨)
 -aframes number (output)
     # 设置录制音频帧的个数这是 -frames:a 的别名
@@ -27,16 +28,16 @@
 # 拆分音频
 らびりんず - 夢路らびりんす.log
 
-     Track |   Start  |  Length  | Start sector | End sector 
+     Track |   Start  |  Length  | Start sector | End sector
     ---------------------------------------------------------
-        1  |  0:00.00 |  4:03.02 |         0    |    18226   
-        2  |  4:03.02 |  4:17.59 |     18227    |    37560   
-        3  |  8:20.61 |  4:02.19 |     37561    |    55729   
-        4  | 12:23.05 |  4:02.34 |     55730    |    73913   
-        5  | 16:25.39 |  4:02.26 |     73914    |    92089   
-        6  | 20:27.65 |  4:03.21 |     92090    |   110335   
-        7  | 24:31.11 |  4:02.25 |    110336    |   128510   
-        8  | 28:33.36 |  4:16.18 |    128511    |   147728   
+        1  |  0:00.00 |  4:03.02 |         0    |    18226
+        2  |  4:03.02 |  4:17.59 |     18227    |    37560
+        3  |  8:20.61 |  4:02.19 |     37561    |    55729
+        4  | 12:23.05 |  4:02.34 |     55730    |    73913
+        5  | 16:25.39 |  4:02.26 |     73914    |    92089
+        6  | 20:27.65 |  4:03.21 |     92090    |   110335
+        7  | 24:31.11 |  4:02.25 |    110336    |   128510
+        8  | 28:33.36 |  4:16.18 |    128511    |   147728
 
 
 ffmpeg -i i.wav -segment_times \
@@ -71,7 +72,7 @@ ffmpeg -i o.ts -segment_times \
 
 for f in * ;do ffmpeg -i "$f" -c copy "${f%.*}.opus";done
 
-    # 在这之前我也对之前成功分割的文件进行了测试  结果还是失败  
+    # 在这之前我也对之前成功分割的文件进行了测试  结果还是失败
     # 可能 ffmpeg 出了啥问题吧
     # 好像又是opus的问题
     # 算了  以后再管
@@ -94,7 +95,7 @@ ffmpeg -i i.wav \
 
 
 ffmpeg -i in.flac -af lowpass=3000,highpass=200 -c copy ou.flac
-    # 指定 音频Hz范围 截取某段音频  人声频率范围介于300Hz-3000Hz之间 
+    # 指定 音频Hz范围 截取某段音频  人声频率范围介于300Hz-3000Hz之间
 
 
 ffmpeg -lavfi showspectrumpic=s=1920x1080 -i in.flac ou.jpg
@@ -137,3 +138,4 @@ find */*flac  -type f -print0 | parallel -0 --load 90 --retries 3 ffmpeg -i {} -
     # 并行批量转换格式为 opus
 
 
+```

@@ -1,3 +1,4 @@
+```sh
 ffmpeg -f image2 -r 1 -i ./%4d.jpg -r 1 -pix_fmt yuv420p10le -c:v libx265 ou.mkv
     # 把图片合成为视频
   # %4d.jpg  格式为 00001.jpg 00002.jpg 的文件
@@ -40,7 +41,7 @@ for f in *jpg ;do ffmpeg -i "$f" -vf "crop=iw/2:ih:0:0" "${f%}_1.jpeg" -i "$f" -
 
 
 ffmpeg -i in.png -s 1245x1786 ou.png
-    # 压缩 in.png 的图片尺寸为 1245x1786 
+    # 压缩 in.png 的图片尺寸为 1245x1786
     # 注意 这不是通过裁剪的方式处理  而是压缩尺寸
     # 裁剪图片可参考 https://video.stackexchange.com/questions/4563/how-can-i-crop-a-video-with-ffmpeg
 
@@ -55,13 +56,18 @@ for f in *; do cd $f; ffmpeg -r 1 -f image2 -pattern_type glob -i '*.jpg' -vf "s
     # -pattern_type glob 的语法 [] 会因为文件名受到影响  遂使用 cd 来处理
 
 
+```
 
 
+---
+## plotframes (分析视频比特率并输出为 svg )
 
-# plotframes (分析视频比特率并输出为 svg )
+```sh
 pacman -Sy gnuplot perl-json
 curl -OLJ https://raw.githubusercontent.com/FFmpeg/FFmpeg/master/tools/plotframes && chmod +x plotframes
-./plotframes -t svg -o output.svg -i input.mkv 
+./plotframes -t svg -o output.svg -i input.mkv
 ffmpeg --input input.mp4 -map "0:v:0" -codec:v "copy" -frames:v 900 -f "mp4" -movflags "faststart" temp.mp4
 plotframes --input temp.mp4 --stream "v:0" --terminal "svg" --output prettygraph.svg
     # 绘制前900帧
+
+```

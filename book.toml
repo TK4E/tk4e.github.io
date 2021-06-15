@@ -6,6 +6,9 @@ git-repository-icon = "fa-github"
 input-404 = "SUMMARY.md"
 
 
+additional-js = ["js/mermaid.min.js", "js/mermaid-init.js"]
+
+
 [output.html.fold]
 enable = true
 level = 0
@@ -35,8 +38,6 @@ heading-split-level = 3
 copy-js = true
 
 
+[preprocessor.mermaid]
+command = "mdbook-mermaid"
 
-[preprocessor.toc]
-command = "mdbook-toc"
-renderer = ["html"]
-max-level = 6

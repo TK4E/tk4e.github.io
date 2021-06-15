@@ -33,3 +33,5 @@ makepkg -Acs
 pacman -U xxx.pkg.tar.zst
 
 ```
+
+
