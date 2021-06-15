@@ -18,6 +18,7 @@ jobs:
         with:
           mdbook-version: 'latest'
 
+      - run: cargo install mdbook-toc
       - run: mdbook build
 
       - name: Deploy

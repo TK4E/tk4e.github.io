@@ -1,6 +1,9 @@
 [output.html]
 default-theme = "ayu"
 preferred-dark-theme = "ayu"
+git-repository-url = "https://github.com/TK4E/tk4e.github.io"
+git-repository-icon = "fa-github"
+input-404 = "SUMMARY.md"
 
 
 [output.html.fold]
@@ -30,3 +33,10 @@ boost-paragraph = 1
 expand = true
 heading-split-level = 3
 copy-js = true
+
+
+
+[preprocessor.toc]
+command = "mdbook-toc"
+renderer = ["html"]
+max-level = 6

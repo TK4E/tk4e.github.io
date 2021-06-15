@@ -1,4 +1,4 @@
-```rust
+```rust,editable
 use std::{
     env::{temp_dir, var},
     fs::File,
