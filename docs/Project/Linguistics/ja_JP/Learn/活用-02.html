@@ -1,0 +1,700 @@
+<!DOCTYPE HTML>
+<html lang="en" class="sidebar-visible no-js ayu">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>活用-02.md</title>
+                
+
+        <!-- Custom HTML head -->
+        
+
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+                <link rel="icon" href="../../../../favicon.svg">
+                        <link rel="shortcut icon" href="../../../../favicon.png">
+                <link rel="stylesheet" href="../../../../css/variables.css">
+        <link rel="stylesheet" href="../../../../css/general.css">
+        <link rel="stylesheet" href="../../../../css/chrome.css">
+                <link rel="stylesheet" href="../../../../css/print.css" media="print">
+        
+        <!-- Fonts -->
+        <link rel="stylesheet" href="../../../../FontAwesome/css/font-awesome.css">
+                <link rel="stylesheet" href="../../../../fonts/fonts.css">
+        
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="../../../../highlight.css">
+        <link rel="stylesheet" href="../../../../tomorrow-night.css">
+        <link rel="stylesheet" href="../../../../ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+        
+            </head>
+    <body>
+        <!-- Provide site root to javascript -->
+        <script type="text/javascript">
+            var path_to_root = "../../../../";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "ayu" : "ayu";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script type="text/javascript">
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script type="text/javascript">
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            var html = document.querySelector('html');
+            html.classList.remove('no-js')
+            html.classList.remove('ayu')
+            html.classList.add(theme);
+            html.classList.add('js');
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script type="text/javascript">
+            var html = document.querySelector('html');
+            var sidebar = 'hidden';
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div class="sidebar-scrollbox">
+                <ol class="chapter"><li class="chapter-item affix "><a href="../../../../SUMMARY.html">SUMMARY.md</a></li><li class="chapter-item "><a href="../../../../ACG/#-ACG.html"><strong aria-hidden="true">1.</strong> #-ACG.md</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../../../ACG/Anime/#-Anime.html"><strong aria-hidden="true">1.1.</strong> #-Anime.md</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../../../ACG/Anime/ALL/Completed.html"><strong aria-hidden="true">1.1.1.</strong> Completed.md</a></li></ol></li><li class="chapter-item "><a href="../../../../ACG/Galgame/#-Galgame.html"><strong aria-hidden="true">1.2.</strong> #-Galgame.md</a></li><li class="chapter-item "><a href="../../../../ACG/Manga/#-Manga.html"><strong aria-hidden="true">1.3.</strong> #-Manga.md</a></li></ol></li><li class="chapter-item "><a href="../../../../Life/#-Life.html"><strong aria-hidden="true">2.</strong> #-Life.md</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../../../Life/Image/#-Image.html"><strong aria-hidden="true">2.1.</strong> #-Image.md</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../../../Life/Image/Ascii/ascii_art.html"><strong aria-hidden="true">2.1.1.</strong> ascii_art.md</a></li></ol></li><li class="chapter-item "><a href="../../../../Life/Post/#-Post.html"><strong aria-hidden="true">2.2.</strong> #-Post.md</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../../../Life/Post/2021/#-2021.html"><strong aria-hidden="true">2.2.1.</strong> #-2021.md</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../../../Life/Post/2021/06/2021-06-29.html"><strong aria-hidden="true">2.2.1.1.</strong> 2021-06-29.md</a></li><li class="chapter-item "><a href="../../../../Life/Post/2021/06/2021-06-30.html"><strong aria-hidden="true">2.2.1.2.</strong> 2021-06-30.md</a></li><li class="chapter-item "><a href="../../../../Life/Post/2021/06/mermaid-01.html"><strong aria-hidden="true">2.2.1.3.</strong> mermaid-01.md</a></li><li class="chapter-item "><a href="../../../../Life/Post/2021/06/svgbob-01.html"><strong aria-hidden="true">2.2.1.4.</strong> svgbob-01.md</a></li><li class="chapter-item "><a href="../../../../Life/Post/2021/07/2021-07-01.html"><strong aria-hidden="true">2.2.1.5.</strong> 2021-07-01.md</a></li><li class="chapter-item "><a href="../../../../Life/Post/2021/07/2021-07-02.html"><strong aria-hidden="true">2.2.1.6.</strong> 2021-07-02.md</a></li><li class="chapter-item "><a href="../../../../Life/Post/2021/07/2021-07-03.html"><strong aria-hidden="true">2.2.1.7.</strong> 2021-07-03.md</a></li><li class="chapter-item "><a href="../../../../Life/Post/2021/07/2021-07-08.html"><strong aria-hidden="true">2.2.1.8.</strong> 2021-07-08.md</a></li><li class="chapter-item "><a href="../../../../Life/Post/2021/07/2021-07-13.html"><strong aria-hidden="true">2.2.1.9.</strong> 2021-07-13.md</a></li></ol></li></ol></li></ol></li><li class="chapter-item "><a href="../../../../Linux/#-Linux.html"><strong aria-hidden="true">3.</strong> #-Linux.md</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../../../Linux/Arch/#-Arch.html"><strong aria-hidden="true">3.1.</strong> #-Arch.md</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../../../Linux/Arch/01-pacamn/pacman-00.html"><strong aria-hidden="true">3.1.1.</strong> pacman-00.md</a></li><li class="chapter-item "><a href="../../../../Linux/Arch/02-zsh/zsh-00.html"><strong aria-hidden="true">3.1.2.</strong> zsh-00.md</a></li><li class="chapter-item "><a href="../../../../Linux/Arch/03-nvim/nvim-00.html"><strong aria-hidden="true">3.1.3.</strong> nvim-00.md</a></li><li class="chapter-item "><a href="../../../../Linux/Arch/04-SQLite3/sqlite3_example-00.html"><strong aria-hidden="true">3.1.4.</strong> sqlite3_example-00.md</a></li><li class="chapter-item "><a href="../../../../Linux/Arch/04-SQLite3/sqlite3_run_sql-00.html"><strong aria-hidden="true">3.1.5.</strong> sqlite3_run_sql-00.md</a></li><li class="chapter-item "><a href="../../../../Linux/Arch/05-base/Arch-00.html"><strong aria-hidden="true">3.1.6.</strong> Arch-00.md</a></li><li class="chapter-item "><a href="../../../../Linux/Arch/05-base/Linux-00.html"><strong aria-hidden="true">3.1.7.</strong> Linux-00.md</a></li><li class="chapter-item "><a href="../../../../Linux/Arch/05-base/OOM-00.html"><strong aria-hidden="true">3.1.8.</strong> OOM-00.md</a></li><li class="chapter-item "><a href="../../../../Linux/Arch/05-base/cat-00.html"><strong aria-hidden="true">3.1.9.</strong> cat-00.md</a></li><li class="chapter-item "><a href="../../../../Linux/Arch/05-base/cut-00.html"><strong aria-hidden="true">3.1.10.</strong> cut-00.md</a></li><li class="chapter-item "><a href="../../../../Linux/Arch/05-base/echo-00.html"><strong aria-hidden="true">3.1.11.</strong> echo-00.md</a></li><li class="chapter-item "><a href="../../../../Linux/Arch/05-base/file-00.html"><strong aria-hidden="true">3.1.12.</strong> file-00.md</a></li><li class="chapter-item "><a href="../../../../Linux/Arch/05-base/find-00.html"><strong aria-hidden="true">3.1.13.</strong> find-00.md</a></li><li class="chapter-item "><a href="../../../../Linux/Arch/05-base/getopt-00.html"><strong aria-hidden="true">3.1.14.</strong> getopt-00.md</a></li><li class="chapter-item "><a href="../../../../Linux/Arch/05-base/jobs-00.html"><strong aria-hidden="true">3.1.15.</strong> jobs-00.md</a></li><li class="chapter-item "><a href="../../../../Linux/Arch/05-base/journalctl-00.html"><strong aria-hidden="true">3.1.16.</strong> journalctl-00.md</a></li><li class="chapter-item "><a href="../../../../Linux/Arch/05-base/kill-00.html"><strong aria-hidden="true">3.1.17.</strong> kill-00.md</a></li><li class="chapter-item "><a href="../../../../Linux/Arch/05-base/killall-00.html"><strong aria-hidden="true">3.1.18.</strong> killall-00.md</a></li><li class="chapter-item "><a href="../../../../Linux/Arch/05-base/ls-00.html"><strong aria-hidden="true">3.1.19.</strong> ls-00.md</a></li><li class="chapter-item "><a href="../../../../Linux/Arch/05-base/mv-00.html"><strong aria-hidden="true">3.1.20.</strong> mv-00.md</a></li><li class="chapter-item "><a href="../../../../Linux/Arch/05-base/paste-00.html"><strong aria-hidden="true">3.1.21.</strong> paste-00.md</a></li><li class="chapter-item "><a href="../../../../Linux/Arch/05-base/ps-00.html"><strong aria-hidden="true">3.1.22.</strong> ps-00.md</a></li><li class="chapter-item "><a href="../../../../Linux/Arch/05-base/pv-00.html"><strong aria-hidden="true">3.1.23.</strong> pv-00.md</a></li><li class="chapter-item "><a href="../../../../Linux/Arch/05-base/read-00.html"><strong aria-hidden="true">3.1.24.</strong> read-00.md</a></li><li class="chapter-item "><a href="../../../../Linux/Arch/05-base/rm-00.html"><strong aria-hidden="true">3.1.25.</strong> rm-00.md</a></li><li class="chapter-item "><a href="../../../../Linux/Arch/05-base/sed-00.html"><strong aria-hidden="true">3.1.26.</strong> sed-00.md</a></li><li class="chapter-item "><a href="../../../../Linux/Arch/05-base/shell-00.html"><strong aria-hidden="true">3.1.27.</strong> shell-00.md</a></li><li class="chapter-item "><a href="../../../../Linux/Arch/05-base/swap-00.html"><strong aria-hidden="true">3.1.28.</strong> swap-00.md</a></li><li class="chapter-item "><a href="../../../../Linux/Arch/05-base/tail-00.html"><strong aria-hidden="true">3.1.29.</strong> tail-00.md</a></li><li class="chapter-item "><a href="../../../../Linux/Arch/05-base/uniq-00.html"><strong aria-hidden="true">3.1.30.</strong> uniq-00.md</a></li><li class="chapter-item "><a href="../../../../Linux/Arch/05-base/xargs-00.html"><strong aria-hidden="true">3.1.31.</strong> xargs-00.md</a></li><li class="chapter-item "><a href="../../../../Linux/Arch/07-PostgreSQL/postgresql-00.html"><strong aria-hidden="true">3.1.32.</strong> postgresql-00.md</a></li><li class="chapter-item "><a href="../../../../Linux/Arch/08-Wine/wine-00.html"><strong aria-hidden="true">3.1.33.</strong> wine-00.md</a></li><li class="chapter-item "><a href="../../../../Linux/Arch/09-git/git-00.html"><strong aria-hidden="true">3.1.34.</strong> git-00.md</a></li><li class="chapter-item "><a href="../../../../Linux/Arch/10-rg/rg-00.html"><strong aria-hidden="true">3.1.35.</strong> rg-00.md</a></li><li class="chapter-item "><a href="../../../../Linux/Arch/11-fd/fd-00.html"><strong aria-hidden="true">3.1.36.</strong> fd-00.md</a></li><li class="chapter-item "><a href="../../../../Linux/Arch/12-sd/sd-00.html"><strong aria-hidden="true">3.1.37.</strong> sd-00.md</a></li><li class="chapter-item "><a href="../../../../Linux/Arch/16-Rclone/Rclone-00.html"><strong aria-hidden="true">3.1.38.</strong> Rclone-00.md</a></li><li class="chapter-item "><a href="../../../../Linux/Arch/17-Rsync/rsync-00.html"><strong aria-hidden="true">3.1.39.</strong> rsync-00.md</a></li><li class="chapter-item "><a href="../../../../Linux/Arch/18-openssl/openssl-00.html"><strong aria-hidden="true">3.1.40.</strong> openssl-00.md</a></li><li class="chapter-item "><a href="../../../../Linux/Arch/19-ImageMagick/ImageMagick-00.html"><strong aria-hidden="true">3.1.41.</strong> ImageMagick-00.md</a></li><li class="chapter-item "><a href="../../../../Linux/Arch/20-IRC/IRC-00.html"><strong aria-hidden="true">3.1.42.</strong> IRC-00.md</a></li><li class="chapter-item "><a href="../../../../Linux/Arch/21-XFS/xfs-00.html"><strong aria-hidden="true">3.1.43.</strong> xfs-00.md</a></li><li class="chapter-item "><a href="../../../../Linux/Arch/22-Btrfs/Btrfs-00.html"><strong aria-hidden="true">3.1.44.</strong> Btrfs-00.md</a></li><li class="chapter-item "><a href="../../../../Linux/Arch/23-espeak-ng/espeak-ng-00.html"><strong aria-hidden="true">3.1.45.</strong> espeak-ng-00.md</a></li><li class="chapter-item "><a href="../../../../Linux/Arch/24-gnuplot/gnuplot-00.html"><strong aria-hidden="true">3.1.46.</strong> gnuplot-00.md</a></li><li class="chapter-item "><a href="../../../../Linux/Arch/25-moreutils/sponge-00.html"><strong aria-hidden="true">3.1.47.</strong> sponge-00.md</a></li><li class="chapter-item "><a href="../../../../Linux/Arch/25-moreutils/vidir-00.html"><strong aria-hidden="true">3.1.48.</strong> vidir-00.md</a></li><li class="chapter-item "><a href="../../../../Linux/Arch/26-ipfs/ipfs-00.html"><strong aria-hidden="true">3.1.49.</strong> ipfs-00.md</a></li><li class="chapter-item "><a href="../../../../Linux/Arch/27-wget/wget-00.html"><strong aria-hidden="true">3.1.50.</strong> wget-00.md</a></li><li class="chapter-item "><a href="../../../../Linux/Arch/28-gdb/gdb-00.html"><strong aria-hidden="true">3.1.51.</strong> gdb-00.md</a></li><li class="chapter-item "><a href="../../../../Linux/Arch/29-upx/upx-00.html"><strong aria-hidden="true">3.1.52.</strong> upx-00.md</a></li><li class="chapter-item "><a href="../../../../Linux/Arch/30-gpg2/gpg2-00.html"><strong aria-hidden="true">3.1.53.</strong> gpg2-00.md</a></li><li class="chapter-item "><a href="../../../../Linux/Arch/31-openssl/openssl-00.html"><strong aria-hidden="true">3.1.54.</strong> openssl-00.md</a></li><li class="chapter-item "><a href="../../../../Linux/Arch/32-iconv/iconv-00.html"><strong aria-hidden="true">3.1.55.</strong> iconv-00.md</a></li><li class="chapter-item "><a href="../../../../Linux/Arch/33-parallel/parallel-00.html"><strong aria-hidden="true">3.1.56.</strong> parallel-00.md</a></li><li class="chapter-item "><a href="../../../../Linux/Arch/34-qalc/qalc-00.html"><strong aria-hidden="true">3.1.57.</strong> qalc-00.md</a></li><li class="chapter-item "><a href="../../../../Linux/Arch/35-smartmontools/smartmontools-00.html"><strong aria-hidden="true">3.1.58.</strong> smartmontools-00.md</a></li><li class="chapter-item "><a href="../../../../Linux/Arch/36-mplayer/mplayer-00.html"><strong aria-hidden="true">3.1.59.</strong> mplayer-00.md</a></li><li class="chapter-item "><a href="../../../../Linux/Arch/37-vlc/vlc-00.html"><strong aria-hidden="true">3.1.60.</strong> vlc-00.md</a></li><li class="chapter-item "><a href="../../../../Linux/Arch/38-tesseract/tesseract-00.html"><strong aria-hidden="true">3.1.61.</strong> tesseract-00.md</a></li><li class="chapter-item "><a href="../../../../Linux/Arch/39-shnsplit/shnsplit-00.html"><strong aria-hidden="true">3.1.62.</strong> shnsplit-00.md</a></li><li class="chapter-item "><a href="../../../../Linux/Arch/40-rush/rush-00.html"><strong aria-hidden="true">3.1.63.</strong> rush-00.md</a></li><li class="chapter-item "><a href="../../../../Linux/Arch/41-fcron/fcron-00.html"><strong aria-hidden="true">3.1.64.</strong> fcron-00.md</a></li><li class="chapter-item "><a href="../../../../Linux/Arch/42-cargo/cargo-00.html"><strong aria-hidden="true">3.1.65.</strong> cargo-00.md</a></li><li class="chapter-item "><a href="../../../../Linux/Arch/90-tar/tar-00.html"><strong aria-hidden="true">3.1.66.</strong> tar-00.md</a></li><li class="chapter-item "><a href="../../../../Linux/Arch/97-zip/zip-00.html"><strong aria-hidden="true">3.1.67.</strong> zip-00.md</a></li><li class="chapter-item "><a href="../../../../Linux/Arch/98-unrar/unrar-00.html"><strong aria-hidden="true">3.1.68.</strong> unrar-00.md</a></li></ol></li><li class="chapter-item "><a href="../../../../Linux/Multimedia/#-Multimedia.html"><strong aria-hidden="true">3.2.</strong> #-Multimedia.md</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../../../Linux/Multimedia/01-FFmpeg/#-FFmpeg.html"><strong aria-hidden="true">3.2.1.</strong> #-FFmpeg.md</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../../../Linux/Multimedia/01-FFmpeg/Audio/audio-00.html"><strong aria-hidden="true">3.2.1.1.</strong> audio-00.md</a></li><li class="chapter-item "><a href="../../../../Linux/Multimedia/01-FFmpeg/Image/image-00.html"><strong aria-hidden="true">3.2.1.2.</strong> image-00.md</a></li><li class="chapter-item "><a href="../../../../Linux/Multimedia/01-FFmpeg/Video/video-00.html"><strong aria-hidden="true">3.2.1.3.</strong> video-00.md</a></li><li class="chapter-item "><a href="../../../../Linux/Multimedia/01-FFmpeg/x265/x265-00.html"><strong aria-hidden="true">3.2.1.4.</strong> x265-00.md</a></li></ol></li><li class="chapter-item "><a href="../../../../Linux/Multimedia/02-OpenCV/opencv-00.html"><strong aria-hidden="true">3.2.2.</strong> opencv-00.md</a></li><li class="chapter-item "><a href="../../../../Linux/Multimedia/03-Gstreamer/gstreamer-00.html"><strong aria-hidden="true">3.2.3.</strong> gstreamer-00.md</a></li><li class="chapter-item "><a href="../../../../Linux/Multimedia/03-Gstreamer/gstreamer-01.html"><strong aria-hidden="true">3.2.4.</strong> gstreamer-01.md</a></li><li class="chapter-item "><a href="../../../../Linux/Multimedia/05-MPV/mpv-01.html"><strong aria-hidden="true">3.2.5.</strong> mpv-01.md</a></li><li class="chapter-item "><a href="../../../../Linux/Multimedia/07-Krita/krita-01.html"><strong aria-hidden="true">3.2.6.</strong> krita-01.md</a></li></ol></li></ol></li><li class="chapter-item "><a href="../../../../PL/#-PL.html"><strong aria-hidden="true">4.</strong> #-PL.md</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../../../PL/Lua/#-Lua.html"><strong aria-hidden="true">4.1.</strong> #-Lua.md</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../../../PL/Lua/01-local/local-01.html"><strong aria-hidden="true">4.1.1.</strong> local-01.md</a></li></ol></li><li class="chapter-item "><a href="../../../../PL/Rust/#-Rust.html"><strong aria-hidden="true">4.2.</strong> #-Rust.md</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../../../PL/Rust/00-examples/editor-01.html"><strong aria-hidden="true">4.2.1.</strong> editor-01.md</a></li><li class="chapter-item "><a href="../../../../PL/Rust/01-let/let-01.html"><strong aria-hidden="true">4.2.2.</strong> let-01.md</a></li><li class="chapter-item "><a href="../../../../PL/Rust/02-macro/macro-01.html"><strong aria-hidden="true">4.2.3.</strong> macro-01.md</a></li><li class="chapter-item "><a href="../../../../PL/Rust/02-macro/macro-02.html"><strong aria-hidden="true">4.2.4.</strong> macro-02.md</a></li><li class="chapter-item "><a href="../../../../PL/Rust/03-enum/enum-011.html"><strong aria-hidden="true">4.2.5.</strong> enum-011.md</a></li></ol></li></ol></li><li class="chapter-item expanded "><a href="../../../../Project/#-Project.html"><strong aria-hidden="true">5.</strong> #-Project.md</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../../../../Project/Linguistics/#-Linguistics.html"><strong aria-hidden="true">5.1.</strong> #-Linguistics.md</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../../../Project/Linguistics/en_US/#-en_US.html"><strong aria-hidden="true">5.1.1.</strong> #-en_US.md</a></li><li class="chapter-item expanded "><a href="../../../../Project/Linguistics/ja_JP/#-ja_JP.html"><strong aria-hidden="true">5.1.2.</strong> #-ja_JP.md</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../../../Project/Linguistics/ja_JP/Learn/五十音-01.html"><strong aria-hidden="true">5.1.2.1.</strong> 五十音-01.md</a></li><li class="chapter-item "><a href="../../../../Project/Linguistics/ja_JP/Learn/五十音-02.html"><strong aria-hidden="true">5.1.2.2.</strong> 五十音-02.md</a></li><li class="chapter-item "><a href="../../../../Project/Linguistics/ja_JP/Learn/句-01.html"><strong aria-hidden="true">5.1.2.3.</strong> 句-01.md</a></li><li class="chapter-item "><a href="../../../../Project/Linguistics/ja_JP/Learn/品词-01.html"><strong aria-hidden="true">5.1.2.4.</strong> 品词-01.md</a></li><li class="chapter-item "><a href="../../../../Project/Linguistics/ja_JP/Learn/活用-01.html"><strong aria-hidden="true">5.1.2.5.</strong> 活用-01.md</a></li><li class="chapter-item expanded "><a href="../../../../Project/Linguistics/ja_JP/Learn/活用-02.html" class="active"><strong aria-hidden="true">5.1.2.6.</strong> 活用-02.md</a></li><li class="chapter-item "><a href="../../../../Project/Linguistics/ja_JP/Learn/词-01.html"><strong aria-hidden="true">5.1.2.7.</strong> 词-01.md</a></li><li class="chapter-item "><a href="../../../../Project/Linguistics/ja_JP/Learn/读音-02.html"><strong aria-hidden="true">5.1.2.8.</strong> 读音-02.md</a></li></ol></li><li class="chapter-item "><a href="../../../../Project/Linguistics/zh_CN/#-zh_CN.html"><strong aria-hidden="true">5.1.3.</strong> #-zh_CN.md</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../../../Project/Linguistics/zh_CN/Learn/词-01.html"><strong aria-hidden="true">5.1.3.1.</strong> 词-01.md</a></li><li class="chapter-item "><a href="../../../../Project/Linguistics/zh_CN/Other/最xxx之一.html"><strong aria-hidden="true">5.1.3.2.</strong> 最xxx之一.md</a></li></ol></li></ol></li></ol></li></ol>            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                
+                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky bordered">
+                    <div class="left-buttons">
+                        <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </button>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu (default)</button></li>
+                        </ul>
+                                                <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                                            </div>
+
+                    <h1 class="menu-title"></h1>
+
+                    <div class="right-buttons">
+                                                <a href="../../../../print.html" title="Print this book" aria-label="Print this book">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+                                                                        <a href="https://github.com/TK4E/tk4e.github.io" title="Git repository" aria-label="Git repository">
+                            <i id="git-repository-button" class="fa fa-github"></i>
+                        </a>
+                                                
+                    </div>
+                </div>
+
+                                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+                
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script type="text/javascript">
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <hr />
+<p>title:
+date: 2021-07-06 09:28:51
+update:
+author: TK4E
+tags:</p>
+<ul>
+<li>/#japanese</li>
+</ul>
+<hr />
+<h3 id="动词-五段活用"><a class="header" href="#动词-五段活用">动词-五段活用</a></h3>
+<table><thead><tr><th align="left">尾音</th><th align="left"></th><th align="left">未然形</th><th align="left">未然形(接助動詞う時)</th><th align="left">連用形</th><th align="left">終止形</th><th align="left">連體形</th><th align="left">假定形</th><th align="left">命令形</th></tr></thead><tbody>
+<tr><td align="left">く</td><td align="left">歩く</td><td align="left">aruku</td><td align="left">-か</td><td align="left">-こ</td><td align="left">-き</td><td align="left">-く</td><td align="left">-く</td><td align="left">-け</td></tr>
+<tr><td align="left">ぐ</td><td align="left">脱ぐ</td><td align="left">nugu</td><td align="left">-が</td><td align="left">-ご</td><td align="left">-ぎ</td><td align="left">-ぐ</td><td align="left">-ぐ</td><td align="left">-げ</td></tr>
+<tr><td align="left">す</td><td align="left">話す</td><td align="left">hanasu</td><td align="left">-さ</td><td align="left">-そ</td><td align="left">-し</td><td align="left">-す</td><td align="left">-す</td><td align="left">-せ</td></tr>
+<tr><td align="left">つ</td><td align="left">待つ</td><td align="left">matsu</td><td align="left">-た</td><td align="left">-と</td><td align="left">-ち</td><td align="left">-つ</td><td align="left">-つ</td><td align="left">-て</td></tr>
+<tr><td align="left">ぬ</td><td align="left">死ぬ</td><td align="left">shinu</td><td align="left">-な</td><td align="left">-の</td><td align="left">-に</td><td align="left">-ぬ</td><td align="left">-ぬ</td><td align="left">-ね</td></tr>
+<tr><td align="left">ぶ</td><td align="left">飛ぶ</td><td align="left">tobu</td><td align="left">-ば</td><td align="left">-ぼ</td><td align="left">-び</td><td align="left">-ぶ</td><td align="left">-ぶ</td><td align="left">-べ</td></tr>
+<tr><td align="left">む</td><td align="left">沈む</td><td align="left">shizumu</td><td align="left">-ま</td><td align="left">-も</td><td align="left">-み</td><td align="left">-む</td><td align="left">-む</td><td align="left">-め</td></tr>
+<tr><td align="left">る</td><td align="left">走る</td><td align="left">hashiru</td><td align="left">-ら</td><td align="left">-ろ</td><td align="left">-り</td><td align="left">-る</td><td align="left">-る</td><td align="left">-れ</td></tr>
+<tr><td align="left">う</td><td align="left">歌う</td><td align="left">utau</td><td align="left">-わ</td><td align="left">-お</td><td align="left">-い</td><td align="left">-う</td><td align="left">-う</td><td align="left">-え</td></tr>
+</tbody></table>
+<h3 id=""><a class="header" href="#"></a></h3>
+<tbody>
+<tr class="odd">
+<td><table>
+<thead>
+<tr class="header">
+<th><p>辞書形<br />
+<em>終止形</em></p></th>
+<th><p>ます形<br />
+<em>連用形</em></p></th>
+<th><p>否定形<br />
+<em>未然形</em></p></th>
+<th><p>て形<br />
+<em>"te"形</em></p></th>
+<th><p>た形<br />
+<em>"ta"形</em></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><p>～う <em>-u</em></p></td>
+<td><p>～います <em>-imasu</em></p></td>
+<td><p>～わない <em>-wanai</em></p></td>
+<td><p>～って <em>-tte</em></p></td>
+<td><p>～った <em>-tta</em></p></td>
+</tr>
+<tr class="even">
+<td><p>～つ <em>-tsu</em></p></td>
+<td><p>～ちます <em>-chimasu</em></p></td>
+<td><p>～たない <em>-tanai</em></p></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td><p>～る <em>-ru</em></p></td>
+<td><p>～ります <em>-rimasu</em></p></td>
+<td><p>～らない <em>-ranai</em></p></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td><p>～く <em>-ku</em></p></td>
+<td><p>～きます <em>-kimasu</em></p></td>
+<td><p>～かない <em>-kanai</em></p></td>
+<td><p>～いて <em>-ite</em></p></td>
+<td><p>～いた <em>-ita</em></p></td>
+</tr>
+<tr class="odd">
+<td><p>～ぐ <em>-gu</em></p></td>
+<td><p>～ぎます <em>-gimasu</em></p></td>
+<td><p>～がない <em>-ganai</em></p></td>
+<td><p>～いで <em>-ide</em></p></td>
+<td><p>～いだ <em>-ida</em></p></td>
+</tr>
+<tr class="even">
+<td><p>～ぶ <em>-bu</em></p></td>
+<td><p>～びます <em>-bimasu</em></p></td>
+<td><p>～ばない <em>-banai</em></p></td>
+<td><p>～んで <em>-nde</em></p></td>
+<td><p>～んだ <em>-nda</em></p></td>
+</tr>
+<tr class="odd">
+<td><p>～む <em>-mu</em></p></td>
+<td><p>～みます <em>-mimasu</em></p></td>
+<td><p>～まない <em>-manai</em></p></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td><p>～す <em>-su</em></p></td>
+<td><p>～します <em>-shimasu</em></p></td>
+<td><p>～さない <em>-sanai</em></p></td>
+<td><p>～して <em>-shite</em></p></td>
+<td><p>～した <em>-shita</em></p></td>
+</tr>
+<tr class="odd">
+<td><p>(～い)る <em>-iru</em></p></td>
+<td><p>～ます <em>-masu</em></p></td>
+<td><p>～ない <em>-nai</em></p></td>
+<td><p>～て <em>-te</em></p></td>
+<td><p>～た <em>-ta</em></p></td>
+</tr>
+<tr class="even">
+<td><p>(～え)る <em>-eru</em></p></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td><p>～する <em>-suru</em></p></td>
+<td><p>～します <em>-shimasu</em></p></td>
+<td><p>～しない <em>-shinai</em></p></td>
+<td><p>～して <em>-shite</em></p></td>
+<td><p>～した <em>-shita</em></p></td>
+</tr>
+<tr class="even">
+<td><p>～くる <em>-kuru</em></p></td>
+<td><p>～きます <em>-kimasu</em></p></td>
+<td><p>～こない <em>-konai</em></p></td>
+<td><p>～きて <em>-kite</em></p></td>
+<td><p>～きた <em>-kita</em></p></td>
+</tr>
+</tbody>
+</table></td>
+<td><table>
+<thead>
+<tr class="header">
+<th><p>辞書形<br />
+<em>終止形</em></p></th>
+<th><p>可能形<br />
+<em>已然形</em></p></th>
+<th><p>条件形<br />
+<em>假定形</em></p></th>
+<th><p>意向形<br />
+<em>推量形</em></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><p>～う <em>-u</em></p></td>
+<td><p>～える <em>-eru</em></p></td>
+<td><p>～えば <em>-eba</em></p></td>
+<td><p>～おう <em>-ō</em></p></td>
+</tr>
+<tr class="even">
+<td><p>～つ <em>-tsu</em></p></td>
+<td><p>～てる <em>-teru</em></p></td>
+<td><p>～てば <em>-teba</em></p></td>
+<td><p>～とう <em>-tō</em></p></td>
+</tr>
+<tr class="odd">
+<td><p>～る <em>-ru</em></p></td>
+<td><p>～れる <em>-reru</em></p></td>
+<td><p>～れば <em>-reba</em></p></td>
+<td><p>～ろう <em>-rō</em></p></td>
+</tr>
+<tr class="even">
+<td><p>～く <em>-ku</em></p></td>
+<td><p>～ける <em>-keru</em></p></td>
+<td><p>～けば <em>-keba</em></p></td>
+<td><p>～こう <em>-kō</em></p></td>
+</tr>
+<tr class="odd">
+<td><p>～ぐ <em>-gu</em></p></td>
+<td><p>～げる <em>-geru</em></p></td>
+<td><p>～げば <em>-geba</em></p></td>
+<td><p>～ごう <em>-gō</em></p></td>
+</tr>
+<tr class="even">
+<td><p>～ぶ <em>-bu</em></p></td>
+<td><p>～べる <em>-beru</em></p></td>
+<td><p>～べば <em>-beba</em></p></td>
+<td><p>～ぼう <em>-bō</em></p></td>
+</tr>
+<tr class="odd">
+<td><p>～む <em>-mu</em></p></td>
+<td><p>～める <em>-meru</em></p></td>
+<td><p>～めば <em>-meba</em></p></td>
+<td><p>～もう <em>-mō</em></p></td>
+</tr>
+<tr class="even">
+<td><p>～す <em>-su</em></p></td>
+<td><p>～せる <em>-seru</em></p></td>
+<td><p>～せば <em>-seba</em></p></td>
+<td><p>～そう <em>-sō</em></p></td>
+</tr>
+<tr class="odd">
+<td><p>(～い)る <em>-iru</em></p></td>
+<td><p>～られる <em>-rareru</em></p></td>
+<td><p>～れば <em>-reba</em></p></td>
+<td><p>～よう <em>-yō</em></p></td>
+</tr>
+<tr class="even">
+<td><p>(～え)る <em>-eru</em></p></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td><p>する <em>suru</em></p></td>
+<td><p>できる <em>dekiru</em></p></td>
+<td><p>すれば <em>sureba</em></p></td>
+<td><p>しよう <em>shiyō</em></p></td>
+</tr>
+<tr class="even">
+<td><p>くる <em>kuru</em></p></td>
+<td><p>こられる <em>korareru</em></p></td>
+<td><p>くれば <em>kureba</em></p></td>
+<td><p>こよう <em>koyō</em></p></td>
+</tr>
+</tbody>
+</table></td>
+</tr>
+<tr class="even">
+<td><table>
+<thead>
+<tr class="header">
+<th><p>辭典字例子</p></th>
+<th><p>連用形例子</p></th>
+<th><p>未然形例子</p></th>
+<th><p>分詞形例子</p></th>
+<th><p>完成形例子</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><p>あら<strong>う</strong> <em>ara<strong>u</strong></em> <small>"洗"</small></p></td>
+<td><p>あら<strong>います</strong> <em>ara<strong>imasu</strong></em></p></td>
+<td><p>あら<strong>わない</strong> <em>ara<strong>wanai</strong></em></p></td>
+<td><p>あら<strong>って</strong> <em>ara<strong>tte</strong></em></p></td>
+<td><p>あら<strong>った</strong> <em>ara<strong>tta</strong></em></p></td>
+</tr>
+<tr class="even">
+<td><p>ま<strong>つ</strong> <em>ma<strong>tsu</strong></em> <small>"等待"</small></p></td>
+<td><p>ま<strong>ちます</strong> <em>ma<strong>chimasu</strong></em></p></td>
+<td><p>ま<strong>たない</strong> <em>ma<strong>tanai</strong></em></p></td>
+<td><p>ま<strong>って</strong> <em>ma<strong>tte</strong></em></p></td>
+<td><p>ま<strong>った</strong> <em>ma<strong>tta</strong></em></p></td>
+</tr>
+<tr class="odd">
+<td><p>と<strong>る</strong> <em>to<strong>ru</strong></em> <small>"採取"</small></p></td>
+<td><p>と<strong>ります</strong> <em>to<strong>rimasu</strong></em></p></td>
+<td><p>と<strong>らない</strong> <em>to<strong>ranai</strong></em></p></td>
+<td><p>と<strong>って</strong> <em>to<strong>tte</strong></em></p></td>
+<td><p>と<strong>った</strong> <em>to<strong>tta</strong></em></p></td>
+</tr>
+<tr class="even">
+<td><p>か<strong>く</strong> <em>ka<strong>ku</strong></em> <small>"寫"</small></p></td>
+<td><p>か<strong>きます</strong> <em>ka<strong>kimasu</strong></em></p></td>
+<td><p>か<strong>かない</strong> <em>ka<strong>kanai</strong></em></p></td>
+<td><p>か<strong>いて</strong> <em>ka<strong>ite</strong></em></p></td>
+<td><p>か<strong>いた</strong> <em>ka<strong>ita</strong></em></p></td>
+</tr>
+<tr class="odd">
+<td><p>いそ<strong>ぐ</strong> <em>iso<strong>gu</strong></em> <small>"匆忙"</small></p></td>
+<td><p>いそ<strong>ぎます</strong> <em>iso<strong>gimasu</strong></em></p></td>
+<td><p>いそ<strong>がない</strong> <em>iso<strong>ganai</strong></em></p></td>
+<td><p>いそ<strong>いで</strong> <em>iso<strong>ide</strong></em></p></td>
+<td><p>いそ<strong>いだ</strong> <em>iso<strong>ida</strong></em></p></td>
+</tr>
+<tr class="even">
+<td><p>し<strong>ぬ</strong> <em>shi<strong>nu</strong></em> <small>"死"</small></p></td>
+<td><p>し<strong>にます</strong> <em>shi<strong>nimasu</strong></em></p></td>
+<td><p>し<strong>なない</strong> <em>shi<strong>nanai</strong></em></p></td>
+<td><p>し<strong>んで</strong> <em>shi<strong>nde</strong></em></p></td>
+<td><p>し<strong>んだ</strong> <em>shi<strong>nda</strong></em></p></td>
+</tr>
+<tr class="odd">
+<td><p>よ<strong>ぶ</strong> <em>yo<strong>bu</strong></em> <small>"大喊"</small></p></td>
+<td><p>よ<strong>びます</strong> <em>yo<strong>bimasu</strong></em></p></td>
+<td><p>よ<strong>ばない</strong> <em>yo<strong>banai</strong></em></p></td>
+<td><p>よ<strong>んで</strong> <em>yo<strong>nde</strong></em></p></td>
+<td><p>よ<strong>んだ</strong> <em>yo<strong>nda</strong></em></p></td>
+</tr>
+<tr class="even">
+<td><p>の<strong>む</strong> <em>no<strong>mu</strong></em> <small>"喝"</small></p></td>
+<td><p>の<strong>みます</strong> <em>no<strong>mimasu</strong></em></p></td>
+<td><p>の<strong>まない</strong> <em>no<strong>manai</strong></em></p></td>
+<td><p>の<strong>んで</strong> <em>no<strong>nde</strong></em></p></td>
+<td><p>の<strong>んだ</strong> <em>no<strong>nda</strong></em></p></td>
+</tr>
+<tr class="odd">
+<td><p>はな<strong>す</strong> <em>hana<strong>su</strong></em> <small>"說話"</small></p></td>
+<td><p>はな<strong>します</strong> <em>hana<strong>shimasu</strong></em></p></td>
+<td><p>はな<strong>さない</strong> <em>hana<strong>sanai</strong></em></p></td>
+<td><p>はな<strong>して</strong> <em>hana<strong>shite</strong></em></p></td>
+<td><p>はな<strong>した</strong> <em>hana<strong>shita</strong></em></p></td>
+</tr>
+<tr class="even">
+<td><p>み<strong>る</strong> <em>mi<strong>ru</strong></em> <small>"看到"</small></p></td>
+<td><p>み<strong>ます</strong> <em>mi<strong>masu</strong></em></p></td>
+<td><p>み<strong>ない</strong> <em>mi<strong>nai</strong></em></p></td>
+<td><p>み<strong>て</strong> <em>mi<strong>te</strong></em></p></td>
+<td><p>み<strong>た</strong> <em>mi<strong>ta</strong></em></p></td>
+</tr>
+<tr class="odd">
+<td><p>たべ<strong>る</strong> <em>tabe<strong>ru</strong></em> <small>"吃"</small></p></td>
+<td><p>たべ<strong>ます</strong> <em>tabe<strong>masu</strong></em></p></td>
+<td><p>たべ<strong>ない</strong> <em>tabe<strong>nai</strong></em></p></td>
+<td><p>たべ<strong>て</strong> <em>tabe<strong>te</strong></em></p></td>
+<td><p>たべ<strong>た</strong> <em>tabe<strong>ta</strong></em></p></td>
+</tr>
+<tr class="even">
+<td><p>する <em>suru</em> <small>"做"</small></p></td>
+<td><p>します <em>shimasu</em></p></td>
+<td><p>しない <em>shinai</em></p></td>
+<td><p>して <em>shite</em></p></td>
+<td><p>した <em>shita</em></p></td>
+</tr>
+<tr class="odd">
+<td><p>勉強 <em>benkyou</em> <small>"研究"</small></p></td>
+<td><p>勉強<strong>します</strong> <em>benkyou<strong>shimasu</strong></em></p></td>
+<td><p>勉強<strong>しない</strong> <em>benkyou<strong>shinai</strong></em></p></td>
+<td><p>勉強<strong>して</strong> <em>benkyou<strong>shite</strong></em></p></td>
+<td><p>勉強<strong>した</strong> <em>benkyou<strong>shita</strong></em></p></td>
+</tr>
+<tr class="even">
+<td><p>くる <em>kuru</em> <small>"來"</small></p></td>
+<td><p>きます <em>kimasu</em></p></td>
+<td><p>こない <em>konai</em></p></td>
+<td><p>きて <em>kite</em></p></td>
+<td><p>きた <em>kita</em></p></td>
+</tr>
+</tbody>
+</table></td>
+<td><table>
+<thead>
+<tr class="header">
+<th><p>辞書形<br />
+<em>終止形</em></p></th>
+<th><p>受身･尊敬<br />
+<em>passive verb</em></p></th>
+<th><p>使役<br />
+<em>causative verb</em></p></th>
+<th><p>禁止形<br />
+<em>prohibitive form</em></p></th>
+<th><p>命令形<br />
+<em>imperative form</em></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><p>～う <em>-u</em></p></td>
+<td><p>～われる <em>-wareru</em></p></td>
+<td><p>～わせる <em>-waseru</em></p></td>
+<td><p>～うな <em>-u na</em></p></td>
+<td><p>～え <em>-e</em></p></td>
+</tr>
+<tr class="even">
+<td><p>～つ <em>-tsu</em></p></td>
+<td><p>～たれる <em>-tareru</em></p></td>
+<td><p>～たせる <em>-taseru</em></p></td>
+<td><p>～つな <em>-tsu na</em></p></td>
+<td><p>～て <em>-te</em></p></td>
+</tr>
+<tr class="odd">
+<td><p>～る <em>-ru</em></p></td>
+<td><p>～られる <em>-rareru</em></p></td>
+<td><p>～らせる <em>-raseru</em></p></td>
+<td><p>～るな <em>-ru na</em></p></td>
+<td><p>～れ <em>-re</em></p></td>
+</tr>
+<tr class="even">
+<td><p>～く <em>-ku</em></p></td>
+<td><p>～かれる <em>-kareru</em></p></td>
+<td><p>～かせる <em>-kaseru</em></p></td>
+<td><p>～くな <em>-ku na</em></p></td>
+<td><p>～け <em>-ke</em></p></td>
+</tr>
+<tr class="odd">
+<td><p>～ぐ <em>-gu</em></p></td>
+<td><p>～がれる <em>-gareru</em></p></td>
+<td><p>～がせる <em>-gaseru</em></p></td>
+<td><p>～ぐな <em>-gu na</em></p></td>
+<td><p>～げ <em>-ge</em></p></td>
+</tr>
+<tr class="even">
+<td><p>～ぶ <em>-bu</em></p></td>
+<td><p>～ばれる <em>-bareru</em></p></td>
+<td><p>～ばせる <em>-baseru</em></p></td>
+<td><p>～ぶな <em>-bu na</em></p></td>
+<td><p>～べ <em>-be</em></p></td>
+</tr>
+<tr class="odd">
+<td><p>～む <em>-mu</em></p></td>
+<td><p>～まれる <em>-mareru</em></p></td>
+<td><p>～ませる <em>-maseru</em></p></td>
+<td><p>～むな <em>-mu na</em></p></td>
+<td><p>～め <em>-me</em></p></td>
+</tr>
+<tr class="even">
+<td><p>～す <em>-su</em></p></td>
+<td><p>～される <em>-sareru</em></p></td>
+<td><p>～させる <em>-saseru</em></p></td>
+<td><p>～すな <em>-su na</em></p></td>
+<td><p>～せ <em>-se</em></p></td>
+</tr>
+<tr class="odd">
+<td><p>(～い)る <em>-iru</em></p></td>
+<td><p>～られる <em>-rareru</em></p></td>
+<td><p>(～い)るな <em>-iru na</em></p></td>
+<td><p>～ろ <em>-ro</em></p></td>
+<td></td>
+</tr>
+<tr class="even">
+<td><p>(～え)る <em>-eru</em></p></td>
+<td><p>(～え)るな <em>-eru na</em></p></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td><p>する <em>suru</em></p></td>
+<td><p>される <em>sareru</em></p></td>
+<td><p>させる <em>saseru</em></p></td>
+<td><p>するな <em>suru na</em></p></td>
+<td><p>しろ <em>shiro</em></p></td>
+</tr>
+<tr class="even">
+<td><p>くる <em>kuru</em></p></td>
+<td><p>こられる <em>korareru</em></p></td>
+<td><p>こさせる <em>kosaseru</em></p></td>
+<td><p>くるな <em>kuru na</em></p></td>
+<td><p>こい <em>koi</em></p></td>
+</tr>
+</tbody>
+</table></td>
+</tr>
+</tbody>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.13.1/dist/katex.min.css">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.13.1/dist/katex.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.13.1/dist/contrib/auto-render.min.js"></script>
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        renderMathInElement(document.body, {
+            delimiters: [
+                { left: "$$", right: "$$", display: true },
+                { left: "\\(", right: "\\)", display: false },
+                { left: "$", right: "$", display: false },
+                { left: "\\[", right: "\\]", display: true }
+            ]
+        });
+    });
+</script>
+<style>
+
+.vert1{
+    width: 100%;
+    height:200px;
+    -webkit-writing-mode: vertical-rl;
+    writing-mode: vertical-rl;
+    padding-top:40px;
+    font-size:16px;
+    overflow: auto;
+}
+
+.vert2{
+    width: 100%;
+    height:200px;
+    -webkit-writing-mode: vertical-lr;
+    writing-mode: vertical-lr;
+    padding-top:40px;
+    font-size:16px;
+    overflow: auto;
+}
+
+</style>
+<style>
+
+.vert1{
+    width: 100%;
+    height:200px;
+    -webkit-writing-mode: vertical-rl;
+    writing-mode: vertical-rl;
+    padding-top:40px;
+    font-size:16px;
+    overflow: auto;
+}
+
+.vert2{
+    width: 100%;
+    height:200px;
+    -webkit-writing-mode: vertical-lr;
+    writing-mode: vertical-lr;
+    padding-top:40px;
+    font-size:16px;
+    overflow: auto;
+}
+
+</style>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                                                    <a rel="prev" href="../../../../Project/Linguistics/ja_JP/Learn/活用-01.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+                        
+                                                    <a rel="next" href="../../../../Project/Linguistics/ja_JP/Learn/词-01.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+                        
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                                    <a rel="prev" href="../../../../Project/Linguistics/ja_JP/Learn/活用-01.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+                
+                                    <a rel="next" href="../../../../Project/Linguistics/ja_JP/Learn/词-01.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+                            </nav>
+
+        </div>
+
+        
+        
+                <script type="text/javascript">
+            window.playground_line_numbers = true;
+        </script>
+        
+                <script type="text/javascript">
+            window.playground_copyable = true;
+        </script>
+        
+                <script src="../../../../ace.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../../../../editor.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../../../../mode-rust.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../../../../theme-dawn.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../../../../theme-tomorrow_night.js" type="text/javascript" charset="utf-8"></script>
+        
+                <script src="../../../../elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../../../../mark.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../../../../searcher.js" type="text/javascript" charset="utf-8"></script>
+        
+        <script src="../../../../clipboard.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../../../../highlight.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../../../../book.js" type="text/javascript" charset="utf-8"></script>
+
+        <!-- Custom JS scripts -->
+        
+        
+    </body>
+</html>

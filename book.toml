@@ -1,0 +1,88 @@
+[output.html]
+default-theme = "ayu"
+preferred-dark-theme = "ayu"
+git-repository-url = "https://github.com/TK4E/tk4e.github.io"
+git-repository-icon = "fa-github"
+input-404 = ""
+multilingual = false
+# theme = "theme"
+
+
+additional-js = [
+# "script/mermaid/mermaid.min.js",
+# "script/mermaid/mermaid-init.js",
+# "script/katex/katex.js",
+# "script/pagetoc/sidebar.js",
+]
+
+additional-css = [
+# "script/katex/katex.css",
+# "script/pagetoc/style.css",
+]
+
+
+[build]
+build-dir = "./docs"
+create-missing = false
+
+[output.html.fold]
+enable = true
+level = 0
+
+
+[output.html.playground]
+editable = true
+copyable = true
+copy-js = true
+line-numbers = true
+
+
+[output.html.print]
+enable = true
+
+
+[output.html.search]
+enable = true
+limit-results = 30
+teaser-word-count = 30
+use-boolean-and = true
+boost-title = 2
+boost-hierarchy = 1
+boost-paragraph = 1
+expand = true
+heading-split-level = 3
+copy-js = true
+
+
+# [preprocessor.mermaid]
+# command = "mdbook-mermaid"
+
+
+# [preprocessor.svgbob]
+# text_width = 8.0
+# text_height = 16.0
+# class = "bob"
+# font_family = "arial"
+# font_size = 14.0
+# stroke_width = 2.0
+# # there's using css-variables from theme:
+# stroke_color = "var(--fg)" # see default theme / variables.css
+# background_color = "transparent" # also useful `var(--bg)`
+# # all properties are optional.
+
+
+# [preprocessor.toc]
+# command = "mdbook-toc"
+# renderer = ["html"]
+# max-level = 6
+# marker = "<!-- toc -->"
+
+
+# [preprocessor.katex]
+
+[preprocessor.katex]
+command = "python3 script/katex/katex.py"
+renderer = ["html"]
+
+[preprocessor.my]
+command = "python3 script/mdbook/my.py"
